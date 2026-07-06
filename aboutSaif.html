@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about saif </title>
+    <style>
+        /*==========================
+      ABOUT SECTION
+==========================*/
+
+.about{
+    width: 100%;
+    padding: 90px 10%;
+    background: #f8f9fa;
+}
+
+.about .container{
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.4s ease;
+}
+
+.about .container:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.about h2{
+    text-align: center;
+    font-size: 40px;
+    color: #d62828;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.about h2::after{
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: #ffb703;
+    display: block;
+    margin: 12px auto;
+    border-radius: 50px;
+}
+
+.about p{
+    font-size: 17px;
+    color: #555;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+/*==========================
+      PERSONAL INFO
+==========================*/
+
+.about-info{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.about-info p{
+    background: #fff5f5;
+    padding: 15px 20px;
+    border-left: 5px solid #d62828;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+
+.about-info p:hover{
+    transform: translateX(8px);
+    background: #ffe8e8;
+}
+
+.about-info strong{
+    color: #d62828;
+}
+
+/*==========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:768px){
+
+    .about{
+        padding: 60px 20px;
+    }
+
+    .about .container{
+        padding: 30px;
+    }
+
+    .about h2{
+        font-size: 32px;
+    }
+
+    .about p{
+        font-size: 16px;
+    }
+
+    .about-info{
+        grid-template-columns:1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="about" id="about">
+    <div class="container">
+        <h2>About Me</h2>
+
+        <p>
+            Hi, I'm <strong>Saif Islam</strong>, a 6th Semester Software Engineering
+            student with a passion for Web Development and modern technologies.
+            I enjoy creating responsive, user-friendly, and visually appealing
+            websites using HTML, CSS, JavaScript, and Bootstrap.
+        </p>
+
+        <p>
+            I am continuously improving my programming and problem-solving skills
+            by working on real-world projects and learning new technologies.
+            My goal is to become a professional Full Stack Web Developer and
+            build innovative web applications that provide excellent user
+            experiences.
+        </p>
+
+        <p>
+            I believe in continuous learning, creativity, and hard work.
+            Every project I complete helps me gain valuable experience and
+            brings me one step closer to achieving my career goals.
+        </p>
+    </div>
+</section>
+<div class="about-info">
+    <h3>Personal Information</h3>
+
+    <p><strong>Name:</strong> Saif Islam</p>
+    <p><strong>Education:</strong> BS Software Engineering</p>
+    <p><strong>Semester:</strong> 6th Semester</p>
+    <p><strong>Skills:</strong> HTML, CSS, JavaScript, Bootstrap, C++, OOP</p>
+    <p><strong>Goal:</strong> To become a Full Stack Web Developer.</p>
+</div>
+</body>
+</html>

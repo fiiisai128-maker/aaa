@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practiceof html</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .headings1 {
+            color: blue;
+            font-size: 24px;
+        }
+        .lines {
+            color: green;
+            font-size: 18px;
+        }
+
+        #headings1 {
+            color: red;
+            font-size: 24px;
+        }
+        #lines {
+            color: orange;
+            font-size: 18px;
+        }
+        .container2 {
+            background-color: rgba(15, 13, 13, 0.873);
+            color: rgb(220, 216, 235);
+        }
+        .container3 {
+            background-color: rgba(15, 13, 13, 0.724);
+            color: rgb(220, 216, 235);
+        }
+        .cls1{
+            color: red;
+        }
+        .cls2{
+            color: blue;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <!-- headings -->
+    <h1>my blog</h1>
+    <!-- line break tag -->
+    <br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, sint.</p>
+    <!-- links to visit external website-->
+    <a href="https://www.youtube.com" target="_blank"> click here to visit YouTube</a>
+    <br>
+    <!-- link to visit internal vs code folder page -->
+    <a href="./aboutSaif.html" target="_blank">about saif</a>
+    <!-- for any online image path -->
+    <img src="https://tse2.mm.bing.net/th/id/OIP.RQ6botOdTSna954urL_rfgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <!-- orderd list -->
+    <ol>
+        <li><a href="https://www.tiktok.com" target="_blank">Tiktok</a></li>
+        </li>
+        <li>about</li>
+        <li>hire me</li>
+        <li>contact me</li>
+    </ol>
+    <!-- unorders list -->
+    <ul style="list-style-type:disc;">
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </li>
+        <li>about</li>
+        <li>hire me</li>
+        <li>contact me</li>
+    </ul>
+    <!-- description list -->
+    <dl>
+        <dt>Term 1</dt>
+        <dd>Definition 1</dd>
+        <dt>Term 2</dt>
+        <dd>Definition 2</dd>
+    </dl>
+    <!-- formating tags -->
+    <p>
+        Hi, I'm <strong>Saif Islam</strong>, a 6th <b>Software Engineering </b> student with a <i>storng</i>passion for
+        <strong>web development</strong> web development and modern technology. I enjoy creating responsive,
+        <span class="cls2">user-friendly, and visually appealing websites while continuously </span><u>improving</u> my programming and
+        problem-solving skills. I am always eager to learn new technologies and work on real-world projects that help me
+        grow as a developer. My goal is to<del>become</del> a professional Full Stack Web Developer and <sub>build</sub>
+        innovative <sup>web</sup> applications that make a positive impact.
+    </p>
+    <!-- tabels -->
+    <h1> TABLES </h1>
+    <table>
+        <th>
+            <tr>
+                <th>first name</th>
+                <th>last name</th>
+                <th>age</th>
+            </tr>
+        </th>
+        <td>
+            <tr>
+                <td>saif</td>
+                <td>islam</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>ahmad</td>
+                <td>ali</td>
+                <td>21</td>
+        </td>
+    </table>
+    <!-- form -->
+   
+    <div class="container1">
+        <form action="loginsuccessful.html" method='POST'>
+          <fieldset>
+        <legend>login form</legend>
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="email">email</label>
+            <input type="email" id="email"  placeholder=" your email" required><br><br>
+                     <button type="submit">login</button>
+            </fieldset>
+        </form>
+    </div>
+    <!-- radio buttons -->
+  <label for="male">Male</label>
+  <input type ="radio" name="gender" id="male">
+    <label for="female">female</label>
+  <input type ="radio" name="gender" id="female">
+    <label for="other">other</label>
+  <input type ="radio" name="gender" id="other"> <br><br>
+  <!-- dropdown list -->
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+    <option value="uk">UK</option>
+  </select>
+  <!-- text area -->
+   <p>write about yourself here</p>
+    <textarea name="about" id="about" cols="30" rows="10"></textarea>
+
+    <!-- talk about class -->
+  <h2 class="headings1">this is paragraph</h2>
+ <P class="lines"> lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</P>
+    <!-- talk to id in html -->
+       <h2 id="headings1">this is paragraph</h2>
+ <P id="lines"> lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</P>
+    <!-- div is an block level element take full line and span is a in line element take only required space -->
+  <div class="container2">
+    <ul>
+        <li>list item</li>
+          <li>list item</li>
+            <li>list item</li>
+              <li>list item</li>
+                <li>list item</li>
+                  <li>list item</li>
+                    <li>list item</li>
+                      <li>list item</li>
+    </ul>
+    </div>
+  <span class="container3">
+    <ul>
+        <li>list<span class="cls1"> item </span> </li>
+          <li>list item</li>
+            <li>list item</li>
+              <li>list item</li>
+                <li>list item</li>
+                  <li>list item</li>
+                    <li>list item</li>
+                      <li>list item</li>
+
+    </ul>
+
+
+</span>
+<!-- html 5 sementic tags -->
+
+<header>
+    <nav>
+      <div class="logo">my website</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+</header>
+<!-- main tag and section -->
+<main>
+  <section>
+    <h2>Welcome to My Website</h2>
+    <p>This is a simple paragraph within the main content area.</p>
+  </section>
+</main>
+<section>
+    <article>
+      <h2>Article Title</h2>
+      <p>This is the content of the article.</p>
+    </article>
+</section>
+<button id="topBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</body>
+
+</html>
